@@ -22,7 +22,7 @@ emotions.forEach(function(e){
 		    <td><b>' + spk + '</b></td> \
 		    <td>Baseline</td> \
 		    <td>EM</td> \
-		    <td>EM+EA</td> \
+		    <td>EM + SEA</td> \
 		    <td>GST</td> \
 		 </tr>';
 	sent_ids.forEach(function(s, index) {

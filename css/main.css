@@ -24,3 +24,17 @@ body {
     border-right: 0px solid #999;
     border-bottom: 0px dashed #999;
 }
+
+ul {
+    list-style: none;
+}
+
+li:before {
+  content: "-";
+  padding-right: 5px;
+}
+
+ul.wrapper {
+    padding-left: 50px;
+}
+

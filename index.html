@@ -26,11 +26,18 @@
 
     <!-- ABSTRACT -->
     <h2 class="wrapper">Abstract</h2>
-    <p class="wrapper">Text-to-Speech (TTS) systems has recently seen great progress in synthesizing high-quality speech. However, the prosody of generated utterances often is not as diverse as prosody of the natural speech. In case of multi-speaker or voice cloning systems this problem becomes even worse as information about prosody may be present in the input text and the speaker embedding. In this paper we study the phenomenon of the presence of emotional information in speaker embeddings produced by a speaker encoder trained on a large dataset for a speaker verification. We show that the produced embeddings include devoted components encoding prosodic information. Moreover, we propose a simple technique for finding such components and show that manipulating them may help in designing an emotional TTS system.</p>
+    <p class="wrapper">Text-to-Speech (TTS) systems have recently seen great progress in synthesizing high-quality speech. However, the prosody of generated utterances often is not as diverse as prosody of the natural speech. In the case of multi-speaker or voice cloning systems, this problem becomes even worse as information about prosody may be present in the input text and the speaker embedding. In this paper, we study the phenomenon of the presence of emotional information in speaker embeddings produced by a speaker encoder trained on a large dataset for speaker verification. We show that the produced embeddings include devoted components encoding prosodic information. Moreover, we propose a simple technique for finding such components and show that manipulating them may help in designing an emotional TTS system.</p>
 
     <h2 class="wrapper">Samples</h2>
     <p class="wrapper">Here we provide audio samples used in the MOS test for systems comparison for different emotions.</p>
-    <p class="wrapper"> Models included in comparison: <i><b>Baseline</b></i> - Non-attentive Tacotron (NAT) with prosody and pitch predictor (without emotion control), <i><b>EM</b></i> - NAT with modification embedding's components, <i><b>EM+EA</b></i> - combination of the proposed approaches, <i><b>GST</b></i> - Tacotron with global style tokens</p>
+    <p class="wrapper"> Models included in comparison: 
+        <ul class="wrapper">
+            <li><i><b>Baseline</b></i> - Non-attentive Tacotron (NAT) with prosody and pitch predictors (without emotion control),</li>
+            <li><i><b>EM</b></i> - NAT with embedding manipulation, </li>
+            <li><i><b>EM + SEA</b></i> - EM and style embedding averaging, </li>
+            <li><i><b>GST</b></i> - Tacotron with global style tokens</li>
+        </ul>
+    </p>
     
 
     <div class="wrapper" >
