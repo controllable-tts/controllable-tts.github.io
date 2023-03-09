@@ -3,7 +3,7 @@
 <head>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
-    <title>Demo page of "YOUR SPEAKER CLASSIFIER IS (SECRETLY) A STYLE ENCODER (ICASSP 2023 review)"</title>
+    <title>Demo page of "EXPLOITING EMOTION INFORMATION IN SPEAKER EMBEDDINGS FOR EXPRESSIVE TEXT-TO-SPEECH"</title>
     <!-- <link rel="icon" href="resources/img/icon.png"> -->
 
     <link rel="stylesheet" href="css/main.css">
@@ -21,12 +21,12 @@
 <div class="main">
     <!-- HEADER -->
     <br>
-    <h1 class="wrapper">Demo page of "YOUR SPEAKER CLASSIFIER IS (SECRETLY) A STYLE ENCODER (ICASSP 2023 review)</h1>
-    <p class="wrapper">Under review as a conference paper at ICASSP 2023, <a href="">pdf</a></p>
+    <h1 class="wrapper">Demo page of "EXPLOITING EMOTION INFORMATION IN SPEAKER EMBEDDINGS FOR EXPRESSIVE TEXT-TO-SPEECH</h1>
+    <!-- <p class="wrapper">Under review as a conference paper at ICASSP 2023, <a href="">pdf</a></p> -->
 
     <!-- ABSTRACT -->
     <h2 class="wrapper">Abstract</h2>
-    <p class="wrapper">Text-to-Speech (TTS) systems have recently seen great progress in synthesizing high-quality speech. However, the prosody of generated utterances often is not as diverse as prosody of the natural speech. In the case of multi-speaker or voice cloning systems, this problem becomes even worse as information about prosody may be present in the input text and the speaker embedding. In this paper, we study the phenomenon of the presence of emotional information in speaker embeddings produced by a speaker encoder trained on a large dataset for speaker verification. We show that the produced embeddings include devoted components encoding prosodic information. Moreover, we propose a simple technique for finding such components and show that manipulating them may help in designing an emotional TTS system.</p>
+    <p class="wrapper">Text-to-Speech (TTS) systems have recently seen great progress in synthesizing high-quality speech. However, the prosody of generated utterances often is not as diverse as prosody of the natural speech. In the case of multi-speaker or voice cloning systems, this problem becomes even worse as information about prosody may be present in the input text and the speaker embedding. Usually the speaker embedding is produced by a speaker encoder trained on a large dataset for speaker verification. In this paper, we study the phenomenon of the presence of emotional information in speaker embeddings recently revealed for i-vectors and x-vectors. We show that the produced embeddings include devoted components encoding prosodic information which can be exploited for emotional speech generation. We further propose a technique for finding such components and generating emotional speaker embeddings for the target dataset. We demonstrate that emotional TTS system based on the proposed method shows good performance and has very small number of trained parameters compared to solutions based on fine-tuning.</p>
 
     <h2 class="wrapper">Samples</h2>
     <p class="wrapper">Here we provide audio samples used in the MOS test for systems comparison for different emotions.</p>
@@ -34,7 +34,7 @@
         <ul class="wrapper">
             <li><i><b>Baseline</b></i> - Non-attentive Tacotron (NAT) with prosody and pitch predictors (without emotion control),</li>
             <li><i><b>EM</b></i> - NAT with embedding manipulation, </li>
-            <li><i><b>EM + SEA</b></i> - EM and style embedding averaging, </li>
+            <!-- <li><i><b>EM + SEA</b></i> - EM and style embedding averaging, </li> -->
             <li><i><b>GST</b></i> - Tacotron with global style tokens</li>
         </ul>
     </p>
@@ -51,9 +51,9 @@
     </div>       
 
     <script language="JavaScript" type="text/javascript" src="js/content_tables.js"></script>
-    <script language="JavaScript" type="text/javascript" src="js/additional_tables.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/additional_tables2.js"></script>
     <br><br><br>
-    <p class="wrapper" style="text-align: center; font-weight: 300;">October 2022</p>
+    <p class="wrapper" style="text-align: center; font-weight: 300;">March 2023</p>
     <br><br><br>
 </div>
 

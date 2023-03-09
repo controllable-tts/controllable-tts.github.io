@@ -13,7 +13,6 @@ emotions.forEach(function(e){
 		                <td style="text-align: left;"></td> \
 		                <td></td> \
 		                <td></td> \
-		                <td></td> \
 	            	</tr>';
 
 	speakers.forEach(function (spk){
@@ -34,7 +33,6 @@ emotions.forEach(function(e){
 	    cloning_table_html +='\
 		    <td><audio controls=""><source src="resources/audio/additional_speakers/' + sepakers_map[spk] + '/baseline' + s + '.wav"></audio></td> \
 		    <td><audio controls=""><source src="resources/audio/additional_speakers/' + sepakers_map[spk] + '/' + e + '/EM' + s + '.wav"></audio></td> \
-		    <td><audio controls=""><source src="resources/audio/additional_speakers/' + sepakers_map[spk] + '/' + e + '/EM+SEA' + s + '.wav"></audio></td> \
 			</tr>';
 	    });
 	    	

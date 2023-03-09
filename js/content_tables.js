@@ -13,7 +13,6 @@ emotions.forEach(function(e){
 		                <td></td> \
 		                <td></td> \
 		                <td></td> \
-		                <td></td> \
 	            	</tr>';
 
 	speakers.forEach(function (spk){
@@ -22,7 +21,6 @@ emotions.forEach(function(e){
 		    <td><b>' + spk + '</b></td> \
 		    <td>Baseline</td> \
 		    <td>EM</td> \
-		    <td>EM + SEA</td> \
 		    <td>GST</td> \
 		 </tr>';
 	sent_ids.forEach(function(s, index) {
@@ -34,8 +32,7 @@ emotions.forEach(function(e){
 	    }
 	    cloning_table_html +='\
 		    <td><audio controls=""><source src="resources/audio/no_modification/' + s + '/' + spk + '_' + s + '.wav"></audio></td> \
-		    <td><audio controls=""><source src="resources/audio/method1/'+ e +  '/' + s + '/' + spk + '_' + s + '.wav"></audio></td> \
-		    <td><audio controls=""><source src="resources/audio/method3/'+ e +  '/' + s + '/' + spk + '_' + s + '.wav"></audio></td> \
+		    <td><audio controls=""><source src="resources/audio/new_method1/'+ e +  '/' + s + '/' + spk + '_' + s + '.wav"></audio></td> \
 		    <td><audio controls=""><source src="resources/audio/gst/'+e +  '/' + s + '/' + spk + '_' + s + '.wav"></audio></td> \
 			</tr>';
 	    });
