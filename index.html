@@ -21,19 +21,19 @@
 <div class="main">
     <!-- HEADER -->
     <br>
-    <h1 class="wrapper">Demo page of "EXPLOITING EMOTION INFORMATION IN SPEAKER EMBEDDINGS FOR EXPRESSIVE TEXT-TO-SPEECH</h1>
+    <h1 class="wrapper">Demo page of "Exploiting Emotion Information in Speaker Embeddings for Expressive Text-to-Speech"</h1>
     <!-- <p class="wrapper">Under review as a conference paper at ICASSP 2023, <a href="">pdf</a></p> -->
 
     <!-- ABSTRACT -->
     <h2 class="wrapper">Abstract</h2>
-    <p class="wrapper">Text-to-Speech (TTS) systems have recently seen great progress in synthesizing high-quality speech. However, the prosody of generated utterances often is not as diverse as prosody of the natural speech. In the case of multi-speaker or voice cloning systems, this problem becomes even worse as information about prosody may be present in the input text and the speaker embedding. Usually the speaker embedding is produced by a speaker encoder trained on a large dataset for speaker verification. In this paper, we study the phenomenon of the presence of emotional information in speaker embeddings recently revealed for i-vectors and x-vectors. We show that the produced embeddings include devoted components encoding prosodic information which can be exploited for emotional speech generation. We further propose a technique for finding such components and generating emotional speaker embeddings for the target dataset. We demonstrate that emotional TTS system based on the proposed method shows good performance and has very small number of trained parameters compared to solutions based on fine-tuning.</p>
+    <p class="wrapper">Text-to-Speech (TTS) systems have recently seen great progress in synthesizing high-quality speech. However, the prosody of generated utterances often is not as diverse as prosody of the natural speech. In the case of multi-speaker or voice cloning systems, this problem becomes even worse as information about prosody may be present in the input text and the speaker embedding. In this paper, we study the phenomenon of the presence of emotional information in speaker embeddings recently revealed for i-vectors and x-vectors. We show that the produced embeddings may include devoted components encoding prosodic information. We further propose a technique for finding such components and generating emotional speaker embeddings by manipulating them. We then demonstrate that the emotional TTS system based on the proposed method shows good performance and has a smaller number of trained parameters compared to solutions based on fine-tuning.</p>
 
     <h2 class="wrapper">Samples</h2>
     <p class="wrapper">Here we provide audio samples used in the MOS test for systems comparison for different emotions.</p>
     <p class="wrapper"> Models included in comparison: 
         <ul class="wrapper">
             <li><i><b>Baseline</b></i> - Non-attentive Tacotron (NAT) with prosody and pitch predictors (without emotion control),</li>
-            <li><i><b>EM</b></i> - NAT with embedding manipulation, </li>
+            <li><i><b>EM (our)</b></i> - NAT with embedding manipulation, </li>
             <!-- <li><i><b>EM + SEA</b></i> - EM and style embedding averaging, </li> -->
             <li><i><b>GST</b></i> - Tacotron with global style tokens</li>
         </ul>
